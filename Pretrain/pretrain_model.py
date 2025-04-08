@@ -507,15 +507,21 @@ class M4CEA(nn.Module):
 if __name__ == "__main__":
     import torch
 
-    def generate_mask(ch_num, seq_len, mask_ratio):
-        mask_num = int(ch_num * seq_len * mask_ratio)
-        pos = list(range(ch_num * seq_len))
-        return random.sample(pos, mask_num)
+    def probability_proportional_sampling(weights, num_samples):
+
+        mask = []
+        for i in range(weights.shape[0]):
+            sampled_indices = np.random.choice(len(weights[i, :]), size=num_samples, p=weights[i, :], replace=False)
+            mask.append(sampled_indices)
+    
+        return mask
 
     inputs = torch.rand(1, 16, 4000)
+    weights = np.random.rand(3, 320)
 
-#This just for test, in the paper, we use Knowledge-guided mask strategy
-    mask = generate_mask(16, 20, 0.75)
+    weights = weights / weights.sum(axis=1, keepdims=True)
+    mask = probability_proportional_sampling(weights, 160)
+
     net = M4CEA(in_chans=8, out_chans=8, pool='Avg', tie='sinusoidal', F1=8, kernel_length=64, inc=1, outc=8,
                 kernel_size=(1, 63), pad=(0, 31), stride=1, bias=False, sample_len=200, alpha=2,
                 in_dim=200, c_dim=32, seq_len=20, d_model=200, project_mode='linear', learnable_mask=True,
