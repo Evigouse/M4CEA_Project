@@ -23,7 +23,7 @@ You should transfer raw EEG files (such as .cnt, .edf, .bdf, and so on) into pkl
 The model is pre-trained by Pretrain/pretrain_main.py. Notably, you are encouraged to try different hyperparameters in Pretrain/pretrain_config.py, such as the learning rate and warmup_epochs.
 ### Train for fine-tuning
 The model is fine-tuned by Finetune/finetune_main.py. Before fine-tuning, refer the code in Finetune/finetune_chzu_onset_type_dataloader.py to preprocess the downstream datasets as well as split data into training, validation, and test set. Notably, you are also encouraged to try different hyperparameters in Finetune/finetune_config.py. In fine-tuning stage, we choose 42, 2024, 3407, 4399, 114514 as randoms seeds.
-### TODO
+## TODO
 **IF YOU HAVE ANY PROBLEM, PLEASE CONTACT ymfeng@hdu.edu.cn OR COMMIT ISSUES**
 
 
