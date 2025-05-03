@@ -1,6 +1,8 @@
 # M4CEA_Project
 This is the implementation of our submission "M4CEA: A Knowledge-guided Foundation Model for Childhood Epilepsy Analysis".
 
+[![DOI](https://zenodo.org/badge/945730527.svg)](https://doi.org/10.5281/zenodo.15331060)
+
 The pre-trained weight is available at: [Here](https://pan.baidu.com/s/1rSBjt3_ojaITwbyfKxf33Q?pwd=fg3s)
 
 ![M4CEA](M4CEA.png)
