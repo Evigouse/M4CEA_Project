@@ -30,9 +30,13 @@ The model is fine-tuned by Finetune/finetune_main.py. Before fine-tuning, refer 
 If you have any questions, please fell free to contact us.
 
 Feng Yuanmeng (ymfeng@hdu.edu.cn)
+
 Hu Dinghan (hdh@hdu.edu.cn)
+
 Jiang Tiejia (jiangyouze@zju.edu.cn)
+
 Gao Feng (epilepsy@zju.edu.cn)
+
 Cao Jiuwen (jwcao@hdu.edu.cn)
 
 ## Citation
