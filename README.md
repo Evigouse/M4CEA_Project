@@ -27,7 +27,7 @@ The model is fine-tuned by Finetune/finetune_main.py. Before fine-tuning, refer 
 
 
 ## Contact
-If you have any questions, please fell free to contact us.
+If you have any questions, please feel free to contact us.
 
 Feng Yuanmeng (ymfeng@hdu.edu.cn)
 
