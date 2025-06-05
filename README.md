@@ -28,6 +28,7 @@ The model is fine-tuned by Finetune/finetune_main.py. Before fine-tuning, refer 
 
 ## Contact
 If you have any questions, please fell free to contact us.
+
 Feng Yuanmeng (ymfeng@hdu.edu.cn)
 Hu Dinghan (hdh@hdu.edu.cn)
 Jiang Tiejia (jiangyouze@zju.edu.cn)
@@ -35,7 +36,9 @@ Gao Feng (epilepsy@zju.edu.cn)
 Cao Jiuwen (jwcao@hdu.edu.cn)
 
 ## Citation
-If you find this code useful in your research, please cite:
+If you find our paper and repo useful, please cite our paper. Thanks!
+
+```
 @article{feng2025a,
   title = {M4CEA: A Knowledge-guided Foundation Model for Childhood Epilepsy Analysis},
   author = {Feng, Yuanmeng and Hu, Dinghan and Jiang, Tiejia and Gao, Feng and Cao, Jiuwen},
@@ -44,6 +47,7 @@ If you find this code useful in your research, please cite:
   publisher = {IEEE},
   note = {Manuscript submitted for publication}
 }
+```
 
 
 
